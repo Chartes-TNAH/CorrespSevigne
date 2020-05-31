@@ -162,9 +162,6 @@ def resultat():
     :rtype: page HTML
     """
 
-    # On préfèrera l'utilisation de .get() ici
-    #   qui nous permet d'éviter un if long (if "clef" in dictionnaire and dictonnaire["clef"])
-
     # Stockage dans une variable motclef des mot-clefs rentrés par l'utilisateur
     motclef = request.args.get("keyword", None)
     
