@@ -1,0 +1,537 @@
+@charset "UTF-8";
+/*----------------------------------*/
+/*---- Expositions virtuelles ------*/
+/*----------------------------------*/
+/*--- Remplace les <br class="pusher" /> ---*/
+/* Pour les navigateurs récents */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1;
+  /* Pour IE 6/7 (trigger hasLayout) */ }
+
+body#exposition.view,
+body#exposition.salle,
+body#exposition.panneau {
+  padding-top: 34px;
+  background: #f1f0ea;
+  /* -- pages d'une exposition -- */ }
+  body#exposition.view #reindex_en_cours,
+  body#exposition.salle #reindex_en_cours,
+  body#exposition.panneau #reindex_en_cours {
+    top: 0px; }
+  body#exposition.view #header,
+  body#exposition.salle #header,
+  body#exposition.panneau #header {
+    min-height: 161px;
+    height: 161px; }
+    body#exposition.view #header h1,
+    body#exposition.salle #header h1,
+    body#exposition.panneau #header h1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      float: right;
+      width: auto;
+      height: auto;
+      background: none; }
+    body#exposition.view #header #logo a,
+    body#exposition.salle #header #logo a,
+    body#exposition.panneau #header #logo a {
+      padding: 0; }
+    body#exposition.view #header #header_content,
+    body#exposition.salle #header #header_content,
+    body#exposition.panneau #header #header_content {
+      position: relative;
+      width: 1060px;
+      max-height: 161px;
+      margin: 0 auto;
+      background: #060503; }
+      body#exposition.view #header #header_content #bandeau,
+      body#exposition.salle #header #header_content #bandeau,
+      body#exposition.panneau #header #header_content #bandeau {
+        list-style: none;
+        position: relative;
+        width: 1060px;
+        height: auto;
+        margin: 0;
+        padding: 0; }
+        body#exposition.view #header #header_content #bandeau li,
+        body#exposition.salle #header #header_content #bandeau li,
+        body#exposition.panneau #header #header_content #bandeau li {
+          position: absolute;
+          top: 0;
+          left: 0; }
+          body#exposition.view #header #header_content #bandeau li a,
+          body#exposition.salle #header #header_content #bandeau li a,
+          body#exposition.panneau #header #header_content #bandeau li a {
+            text-decoration: none; }
+      body#exposition.view #header #header_content #expo_virtuelle,
+      body#exposition.salle #header #header_content #expo_virtuelle,
+      body#exposition.panneau #header #header_content #expo_virtuelle {
+        position: absolute;
+        top: -13px;
+        left: 20px;
+        z-index: 50; }
+      body#exposition.view #header #header_content #nom_expo,
+      body#exposition.salle #header #header_content #nom_expo,
+      body#exposition.panneau #header #header_content #nom_expo {
+        position: absolute;
+        left: 20px;
+        z-index: 500;
+        font-size: 1.4em;
+        text-shadow: 1px 1px 1px #7b2726;
+        -webkit-filter: dropshadow(color=#7b2726, offx=1, offy=1);
+                filter: dropshadow(color=#7b2726, offx=1, offy=1);
+        font-family: "volkhovregular", Arial, Sans-serif; }
+        body#exposition.view #header #header_content #nom_expo.no_slider_bandeau,
+        body#exposition.salle #header #header_content #nom_expo.no_slider_bandeau,
+        body#exposition.panneau #header #header_content #nom_expo.no_slider_bandeau {
+          bottom: -73px; }
+        body#exposition.view #header #header_content #nom_expo.slider_bandeau,
+        body#exposition.salle #header #header_content #nom_expo.slider_bandeau,
+        body#exposition.panneau #header #header_content #nom_expo.slider_bandeau {
+          bottom: -233px; }
+        body#exposition.view #header #header_content #nom_expo a,
+        body#exposition.view #header #header_content #nom_expo a:active,
+        body#exposition.salle #header #header_content #nom_expo a,
+        body#exposition.salle #header #header_content #nom_expo a:active,
+        body#exposition.panneau #header #header_content #nom_expo a,
+        body#exposition.panneau #header #header_content #nom_expo a:active {
+          color: #fff; }
+  body#exposition.view #menu_default_exposition,
+  body#exposition.salle #menu_default_exposition,
+  body#exposition.panneau #menu_default_exposition {
+    position: relative;
+    width: 1060px;
+    height: auto !important;
+    min-height: 62px;
+    height: 62px;
+    margin: 0 auto 17px;
+    overflow: visible;
+    background: #b03836 url("/css/img/fnd/fnd_menu_expos.png") repeat-x 0 0 !important; }
+    body#exposition.view #menu_default_exposition:after, body#exposition.view #menu_default_exposition:before,
+    body#exposition.salle #menu_default_exposition:after,
+    body#exposition.salle #menu_default_exposition:before,
+    body#exposition.panneau #menu_default_exposition:after,
+    body#exposition.panneau #menu_default_exposition:before {
+      position: absolute;
+      top: -7px;
+      width: 60px;
+      content: ''; }
+    body#exposition.view #menu_default_exposition:before,
+    body#exposition.salle #menu_default_exposition:before,
+    body#exposition.panneau #menu_default_exposition:before {
+      left: -60px;
+      height: 69px;
+      background: url("/css/img/fnd/fnd_menu_expos_before.png") no-repeat 0 0 !important; }
+    body#exposition.view #menu_default_exposition:after,
+    body#exposition.salle #menu_default_exposition:after,
+    body#exposition.panneau #menu_default_exposition:after {
+      right: -60px;
+      height: 67px;
+      background: url("/css/img/fnd/fnd_menu_expos_after.png") no-repeat 100% 0 !important; }
+    body#exposition.view #menu_default_exposition ul.level_0,
+    body#exposition.salle #menu_default_exposition ul.level_0,
+    body#exposition.panneau #menu_default_exposition ul.level_0 {
+      float: right;
+      width: auto; }
+  body#exposition.view #menu_default_exposition,
+  body#exposition.view #menu_default_exposition ul.level_0,
+  body#exposition.view #menu_default_exposition ul.level_0 > li,
+  body#exposition.salle #menu_default_exposition,
+  body#exposition.salle #menu_default_exposition ul.level_0,
+  body#exposition.salle #menu_default_exposition ul.level_0 > li,
+  body#exposition.panneau #menu_default_exposition,
+  body#exposition.panneau #menu_default_exposition ul.level_0,
+  body#exposition.panneau #menu_default_exposition ul.level_0 > li {
+    background: #b03836 url("/css/img/fnd/fnd_menu_expos.png") repeat-x 0 0 !important; }
+  body#exposition.view #menu_default_exposition ul.level_0 > li.active,
+  body#exposition.view #menu_default_exposition ul.level_0 > li:hover,
+  body#exposition.salle #menu_default_exposition ul.level_0 > li.active,
+  body#exposition.salle #menu_default_exposition ul.level_0 > li:hover,
+  body#exposition.panneau #menu_default_exposition ul.level_0 > li.active,
+  body#exposition.panneau #menu_default_exposition ul.level_0 > li:hover {
+    background: #b03836 url("/css/img/fnd/fnd_menu_expos_li_actif.png") no-repeat 0 0 !important; }
+  body#exposition.view #menu_default_exposition ul.level_0 > li.active > a,
+  body#exposition.view #menu_default_exposition ul.level_0 > li.active > span,
+  body#exposition.salle #menu_default_exposition ul.level_0 > li.active > a,
+  body#exposition.salle #menu_default_exposition ul.level_0 > li.active > span,
+  body#exposition.panneau #menu_default_exposition ul.level_0 > li.active > a,
+  body#exposition.panneau #menu_default_exposition ul.level_0 > li.active > span {
+    color: #fff !important; }
+  body#exposition.view #page_exposition:before,
+  body#exposition.view #page_salle:before,
+  body#exposition.view #page_panneau:before,
+  body#exposition.salle #page_exposition:before,
+  body#exposition.salle #page_salle:before,
+  body#exposition.salle #page_panneau:before,
+  body#exposition.panneau #page_exposition:before,
+  body#exposition.panneau #page_salle:before,
+  body#exposition.panneau #page_panneau:before {
+    content: "";
+    position: relative;
+    left: 0;
+    width: 1069px;
+    height: 10px;
+    background: url("/css/img/fnd/fnd_exposition_before.png") repeat 0 0; }
+  body#exposition.view #page_exposition,
+  body#exposition.view #page_salle,
+  body#exposition.view #page_panneau,
+  body#exposition.salle #page_exposition,
+  body#exposition.salle #page_salle,
+  body#exposition.salle #page_panneau,
+  body#exposition.panneau #page_exposition,
+  body#exposition.panneau #page_salle,
+  body#exposition.panneau #page_panneau {
+    position: relative;
+    z-index: 400;
+    width: 1069px;
+    margin: 0 auto 20px;
+    background: url("/css/img/fnd/fnd_exposition.png") repeat-y 0 0; }
+  body#exposition.view #page_exposition:after,
+  body#exposition.view #page_salle:after,
+  body#exposition.view #page_panneau:after,
+  body#exposition.salle #page_exposition:after,
+  body#exposition.salle #page_salle:after,
+  body#exposition.salle #page_panneau:after,
+  body#exposition.panneau #page_exposition:after,
+  body#exposition.panneau #page_salle:after,
+  body#exposition.panneau #page_panneau:after {
+    position: relative;
+    left: -55px;
+    width: 1179px;
+    height: 15px;
+    background: url("/css/img/fnd/fnd_exposition_after.png") repeat 0 0; }
+  body#exposition.view #page_exposition #liste_expositions,
+  body#exposition.view #page_contenu.page_exposition #liste_expositions,
+  body#exposition.salle #page_exposition #liste_expositions,
+  body#exposition.salle #page_contenu.page_exposition #liste_expositions,
+  body#exposition.panneau #page_exposition #liste_expositions,
+  body#exposition.panneau #page_contenu.page_exposition #liste_expositions {
+    display: inline;
+    float: right;
+    margin: 0;
+    width: 72%; }
+  body#exposition.view #exposition #arc_contenu #liste_expositions,
+  body#exposition.salle #exposition #arc_contenu #liste_expositions,
+  body#exposition.panneau #exposition #arc_contenu #liste_expositions {
+    width: 73%; }
+  body#exposition.view #page_exposition #exposition_col_gauche,
+  body#exposition.view #page_salle #col_gauche,
+  body#exposition.salle #page_exposition #exposition_col_gauche,
+  body#exposition.salle #page_salle #col_gauche,
+  body#exposition.panneau #page_exposition #exposition_col_gauche,
+  body#exposition.panneau #page_salle #col_gauche {
+    width: 38.8%;
+    /* Pas toucher ! */
+    float: left;
+    margin: 0; }
+  body#exposition.view #page_exposition #exposition_col_droite,
+  body#exposition.view #page_salle #col_droite,
+  body#exposition.salle #page_exposition #exposition_col_droite,
+  body#exposition.salle #page_salle #col_droite,
+  body#exposition.panneau #page_exposition #exposition_col_droite,
+  body#exposition.panneau #page_salle #col_droite {
+    float: right;
+    width: 59%;
+    margin: 0 2.2% 0 0;
+    display: inline; }
+  body#exposition.view #horizontal_carousel,
+  body#exposition.salle #horizontal_carousel,
+  body#exposition.panneau #horizontal_carousel {
+    clear: both;
+    position: relative; }
+    body#exposition.view #horizontal_carousel .previous_button,
+    body#exposition.view #horizontal_carousel .next_button,
+    body#exposition.salle #horizontal_carousel .previous_button,
+    body#exposition.salle #horizontal_carousel .next_button,
+    body#exposition.panneau #horizontal_carousel .previous_button,
+    body#exposition.panneau #horizontal_carousel .next_button {
+      position: absolute;
+      top: 50%;
+      background: none !important; }
+    body#exposition.view #horizontal_carousel .previous_button,
+    body#exposition.salle #horizontal_carousel .previous_button,
+    body#exposition.panneau #horizontal_carousel .previous_button {
+      left: 0; }
+    body#exposition.view #horizontal_carousel .next_button,
+    body#exposition.salle #horizontal_carousel .next_button,
+    body#exposition.panneau #horizontal_carousel .next_button {
+      right: 0; }
+    body#exposition.view #horizontal_carousel article,
+    body#exposition.salle #horizontal_carousel article,
+    body#exposition.panneau #horizontal_carousel article {
+      width: 94%;
+      margin: 0 auto; }
+    body#exposition.view #horizontal_carousel .contenu_paragraphe .img,
+    body#exposition.salle #horizontal_carousel .contenu_paragraphe .img,
+    body#exposition.panneau #horizontal_carousel .contenu_paragraphe .img {
+      border: 0;
+      background: transparent; }
+
+/* liste des salles */
+#exposition.view #page_exposition #exposition_col_gauche .contenu,
+#exposition.salle #page_salle #col_gauche .contenu {
+  padding: 15px 25px; }
+
+#exposition.view #page_exposition #exposition_col_gauche .contenu p,
+#exposition.salle #page_salle #col_gauche .contenu p {
+  padding: 15px 0 0 0; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle,
+#exposition.salle #page_salle #col_droite .panneau,
+#exposition.view #page_exposition #exposition_col_droite .salle_large,
+#exposition.salle #page_salle #col_droite .panneau_large {
+  float: left;
+  width: 47%;
+  height: auto !important;
+  min-height: 138px;
+  height: 138px;
+  margin: 10px 3% 20px 0;
+  border: 1px #eae9e0 solid;
+  border-left-width: 4px;
+  border-radius: 4px; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle_large,
+#exposition.salle #page_salle #col_droite .panneau_large {
+  display: block;
+  float: none;
+  margin: 15px 0 10px 0;
+  width: auto;
+  height: auto !important;
+  min-height: 0;
+  height: auto; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle.elt_1,
+#exposition.salle #page_salle #col_droite .panneau.elt_1 {
+  float: right;
+  margin-right: 0; }
+
+#exposition.view #page_exposition #exposition_col_droite.nb_salles_impair .salle.elt_1,
+#exposition.view #page_exposition #exposition_col_droite.nb_salles_impair .panneau.elt_1,
+#exposition.salle #page_salle #col_droite.nb_panneaux_impair .salle.elt_1,
+#exposition.salle #page_salle #col_droite.nb_panneaux_impair .panneau.elt_1 {
+  float: left;
+  margin-right: 3%; }
+
+#exposition.view #page_exposition #exposition_col_droite.nb_salles_impair .salle.elt_0,
+#exposition.view #page_exposition #exposition_col_droite.nb_salles_impair .panneau.elt_0,
+#exposition.salle #page_salle #col_droite.nb_panneaux_impair .salle.elt_0,
+#exposition.salle #page_salle #col_droite.nb_panneaux_impair .panneau.elt_0 {
+  float: right;
+  margin-right: 0; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle .padding,
+#exposition.salle #page_salle #col_droite .panneau .padding,
+#exposition.view #page_exposition #exposition_col_droite .salle_large .padding,
+#exposition.salle #page_salle #col_droite .panneau_large .padding {
+  padding: 20px; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle h3,
+#exposition.salle #page_salle #col_droite .panneau h3,
+#exposition.view #page_exposition #exposition_col_droite .salle_large h3,
+#exposition.salle #page_salle #col_droite .panneau_large h3 {
+  margin: 0;
+  font-size: 1.2em;
+  text-transform: none; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle h3 a,
+#exposition.salle #page_salle #col_droite .panneau h3 a,
+#exposition.view #page_exposition #exposition_col_droite .salle_large h3 a,
+#exposition.salle #page_salle #col_droite .panneau_large h3 a {
+  display: block;
+  color: #b03836;
+  text-decoration: none;
+  padding: 0; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle img,
+#exposition.salle #page_salle #col_droite .panneau img,
+#exposition.view #page_exposition #exposition_col_droite .salle_large img,
+#exposition.salle #page_salle #col_droite .panneau_large img {
+  margin: 0 15px 0 0;
+  float: left; }
+
+#exposition.view #page_exposition #exposition_col_droite .salle p,
+#exposition.salle #page_salle #col_droite .panneau p,
+#exposition.view #page_exposition #exposition_col_droite .salle_large p,
+#exposition.salle #page_salle #col_droite .panneau_large p {
+  padding: 0; }
+
+/* page des crédits */
+#page_exposition #credits .contenu {
+  padding: 15px; }
+
+#page_exposition #credits h3 {
+  clear: both;
+  margin: 0 23px 11px;
+  border-bottom: 1px dotted  #cccccc; }
+
+#page_exposition #credits h3 span {
+  color: #b03836;
+  text-decoration: none;
+  font-size: 1.8em;
+  padding: 0 0 0 40px;
+  position: relative;
+  left: -40px; }
+
+/* page des crédits */
+#page_exposition #credits {
+  width: auto;
+  margin: 0 25px; }
+
+#page_exposition #credits .contenu {
+  padding: 15px; }
+
+#page_exposition #credits h3 {
+  clear: both;
+  margin: 0 23px 11px;
+  border-bottom: 1px dotted  #cccccc; }
+
+#page_exposition #credits h3 span {
+  color: #b03836;
+  text-decoration: none;
+  font-size: 1.8em;
+  padding: 0 0 0 40px;
+  position: relative;
+  left: -40px; }
+
+/* page des crédits */
+#page_exposition #liste_expositions {
+  width: auto;
+  margin: 0 25px;
+  overflow: auto; }
+
+/* affichage du module exposition, liste des panneaux */
+#page_salle h3 {
+  clear: both;
+  margin: 20px 0 0 0; }
+
+#page_salle h3 span {
+  color: #b03836;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding: 0 0 0 27px; }
+
+#page_salle #col_gauche .contenu {
+  /*background: #fff;*/ }
+
+#page_salle #col_gauche .contenu p {
+  padding: 15px 5px 5px 5px; }
+
+#page_salle #col_droite .panneau {
+  width: 45%;
+  float: left;
+  margin: 0 2% 30px; }
+
+#page_salle #col_droite .panneau_large {
+  display: block;
+  float: none;
+  margin: 0 2% 30px;
+  width: auto; }
+
+#page_salle #col_droite .panneau h4 {
+  padding: 0 0 5px 0; }
+
+#page_salle #col_droite .panneau h4 a {
+  color: #b03836;
+  text-decoration: none;
+  font-size: 1em; }
+
+#page_salle #col_droite .panneau img {
+  padding: 5px 0; }
+
+#page_salle #col_droite .panneau_large img {
+  float: left;
+  padding: 5px 10px 5px 0; }
+
+#page_salle #col_droite .panneau p {
+  padding: 0 0 5px 0; }
+
+#page_salle #col_droite .panneau p.rouge {
+  color: #b03836; }
+
+/* affichage du module exposition, détail d'un panneau */
+#page_panneau .titre {
+  clear: both;
+  margin: 0 23px 0;
+  border-bottom: 1px dotted  #eae9e0; }
+
+#page_panneau .titre h3 {
+  padding: 10px 0 0 0;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #7e5d50;
+  font-family: "volkhovregular", Arial, Sans-serif; }
+
+#page_panneau .titre a {
+  float: right;
+  margin: 0 5px 0 30px;
+  padding: 7px 0 7px 22px;
+  position: relative;
+  top: -28px; }
+
+#page_panneau .degrade_blanc {
+  clear: both;
+  position: relative;
+  margin: 0 30px;
+  /*border: 1px solid #cccccc;*/
+  background: #fff;
+  border-bottom: 0;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px; }
+
+#page_panneau .titre a.imprimer,
+#classeur .imprimer {
+  background: url("/css/img/fnd/fnd_btn_imprimer.png") no-repeat 0 50%; }
+
+#page_panneau .titre a.diaporama {
+  background: url("/css/img/fnd/fnd_btn_diaporama.png") no-repeat 0 50%;
+  display: none;
+  /* #56824 */ }
+
+body#exposition #header #credits {
+  /*display: none;*/ }
+
+/*-- pages d'une salle --*/
+#page_salle #col_gauche {
+  /*float: left;
+	width: 40%;
+	margin: 0 0 0 2%;
+	display: inline;*/ }
+
+#page_salle #col_droite {
+  /*width: 47%;
+	float: right;
+	margin: 0 0 0 0;
+	display: inline;*/ }
+
+/*-- pages d'un panneau --*/
+#pied_expos {
+  clear: both;
+  margin: 0 auto 30px;
+  padding: 1em;
+  text-align: center; }
+
+#pied_expos p {
+  font-size: 1.133em; }
+
+#pied_expos strong {
+  font-weight: normal;
+  font-family: "alefbold", Arial, Sans-serif; }
+
+#pied_expos strong span {
+  color: #b03836; }

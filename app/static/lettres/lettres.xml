@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lettres de Madame de Sévigné et de ses proches</title>
+                <respStmt>
+                    <resp>Edition numérique d'une correspondance réalisée en mai 2020 dans le cadre
+                        d'un devoir du cours de Python du Master 2 Technologies numériques
+                        appliquées à l'histoire à l'Ecole nationale des Chartes</resp>
+                    <persName>
+                        <forename>Morgane</forename>
+                        <surname>Rousselot</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Ecole nationale des Chartes</publisher>
+                <pubPlace>65 rue de Richelieu, Paris</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <title>Lettres de Madame de Sévigné, de sa famille, et de ses amis. XI.
+                    1693-1701</title>
+                <editor>Pierre-Marie Gault de Saint-Germain</editor>
+                <publicationStmt>
+                    <publisher>Dalibon</publisher>
+                    <date>1823</date>
+                    <distributor>Bibliothèque Nationale de France</distributor>
+                    <availability>
+                        <licence>Domaine Public</licence>
+                    </availability>
+                </publicationStmt>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <text n="1" ref="1">
+        <body>
+            <div1>
+                <head> 
+                    <p>De Madame de Sévigné à Madame de Grignan</p>
+                    <p>A Paris, le vendredi 6 février 1671,</p>
+                </head>
+                <div2>
+                    <p>Ma douleur seroit bien médiocre si je pouvois vous la dépeindre ; je ne
+                        l'entreprendrai pas aussi. J'ai beau chercher ma chère fille, je ne la
+                        trouve plus, et tous les pas qu'elle fait l'éloignent de moi. Je m'en allai
+                        donc à Sainte-Marie toujours pleurant et toujours mourant : il me sembloit
+                        qu'on m'arrachoit le cœur et l'ame; et en effet, quelle rude séparation. Je
+                        demandai la liberté d'être seule ; on me mena dans la chambre de madame du
+                        Hausset, on me fit du feu ; Agnès me regardoit sans me parler ; c'étoit notre
+                        marché; j'y passai jusqu'à cinq heures sans cesser de sangloter : toutes mes
+                        pensées me faisoient mourir. J'écrivis à M. de Grignan, vous pouvez penser
+                        sur quel ton; j'allai ensuite chez madame de La Fayette qui redoubla mes
+                        douleurs par l'intérêt qu'elle y prit : elle étoit seule, et malade et
+                        triste de la mort d'une sœur religieuse; elle étoit comme je la pouvois
+                        désirer. M. de La Rochefoucauld y vint, on ne parla que de vous, de la
+                        raison que j'avois d'être touchée, et du dessein de parler comme il faut à
+                        Mellusine. Je vous réponds qu'elle sera bien relancée. D'Hacqueville vous
+                        rendra un bon compte de cette affaire. Je revins enfin à huit heures de chez
+                        madame de La Fayette ; mais en entrant ici, bon Dieu! comprenez-vous bien ce
+                        que je sentis en montant ce degré? Cette chambre où j'entrois toujours,
+                        hélas! j'en trouvai les portes ouvertes, mais je vis tout démeublé, tout
+                        dérangé, et votre petite fille qui me représentoit la mienne. Comprenez-vous
+                        bien tout ce que je souffris? Les réveils de la nuit ont été noirs, et le
+                        matin je n'étois point avancée d'un pas pour le repos de mon esprit.
+                        L'après-diner se passa avec madame de La Troche à l'Arsenal. Le soir, je
+                        reçus votre lettre qui me remit dans les premiers transports, et ce soir
+                        j'achèverai celle-ci chez M. de Coulanges, où j'apprendrai des nouvelles;
+                        car, pour moi, voilà ce que je sais, avec les douleurs de tous ceux que vous
+                        avez laissés ici ; toute ma lettre seroit pleine de compliments, si je
+                        voulois.</p>
+                    <div3>Vendredi au soir.</div3>
+                    <p> J'ai appris chez madame de Lavardin les nouvelles que je vous mande ; et
+                        j'ai su, par madame de La Fayette, qu'elle et M. de La Rochefoucauld eurent
+                        hier une conversation avec Mellusine, dont le détail n'est pas aisé à écrire
+                        : mais songez qu'elle fut confondue et poussée à bout par l'horreur de son
+                        procédé, qui lui fut reproché sans aucun ménagement. Elle est fort heureuse
+                        du parti qu'on lui offre, et dont elle est demeurée d'accord; c'est de se
+                        taire très-religieusement, moyennant quoi on ne la poussera pas à bout.
+                        Vous avez des amis qui ont pris vos intérêts avec une grande chaleur; je ne
+                        vois que des gens qui vous aiment et vous estiment beaucoup, et qui entrent
+                        bien aisément dans ma douleur. Je n'ai voulu aller encore que chez madame de
+                        La Fayette. On s'empresse fort de me chercher et de me vouloir prendre, et
+                        je crains cela comme la mort. Je vous conjure, ma chère fille, d'avoir soin
+                        de votre santé ; conservez-la pour l'amour de moi, et ne vous abandonnez
+                        pas à ces cruelles négligences, dont il ne me semble pas qu'on puisse jamais
+                        revenir. Je vous embrasse avec une tendresse qui ne sauroit avoir d'égale,
+                        n'en déplaise à toutes les autres. Le mariage de mademoiselle d'Houdancourt
+                        et de M. de Ventadour a été signé ce matin. L'abbé de Chambonnas a été nommé
+                        aussi ce matin à l'évêché de Lodève. Madame la princesse partira le mercredi
+                        des Cendres pour Châteauroux, où M. le prince désire qu'elle fasse quelque
+                        séjour. M. de La Marguerie a la place du conseil de M. d'Estampes, qui
+                        est mort. Madame de Mazarin arrive ce soir à Paris; le roi s'est déclaré son
+                        protecteur, et l'a envoyé quérir au Lis avec un exempt et huit gardes, et un
+                        carrosse bien attelé. Voici un trait d'ingratitude qui ne vous déplaira pas,
+                        et dont je veux faire mon profit, quand je ferai mon livre sur les grandes
+                        ingratitudes. Le maréchal d'Albret a convaincu madame d'Heudicourt, non
+                        seulement d'une bonne galanterie avec M. de Béthune, dont il avoit toujours
+                        voulu douter, mais d'avoir dit de lui et de madame Scarron tous les maux
+                        qu'on peut s'imaginer. Il n'y a point de mauvais office qu'elle n'ait tâché
+                        de rendre à l'un et à l'autre, et cela est tellement avéré, que madame
+                        Scarron ne la voit plus, ni tout l'hôtel de Richelieu. Voilà une femme bien
+                        abimée; mais elle a cette consolation de n'y avoir pas peu contribué.</p>
+                </div2>
+            </div1>
+        </body>
+    </text>
+
+    <text n="2" ref="2">
+        <body>
+            <div1>
+                <head> 
+                    <p>De Madame de Sévigné au Président de Moulceau</p>
+                    <p>A Grignan, le samedi 4
+                        février 1696,</p>
+                </head>
+                <div2>
+                    <p>Je ne me suis point trompée, Monsieur, quand j'ai cru que vous seriez touché
+                        de ma peine, et que vous feriez toute la diligence possible pour la
+                        soulager. Votre ordonnance de M. Barbeyrac et votre lettre ont eu des ailes,
+                        comme vous le souhaitiez, et il semble que cette petite fièvre qui
+                        paroissoit si lente, en ait eu aussi pour fuir aux approches seulement du
+                        nom de M. Barbeyrac. Tout de bon, Monsieur, il y a du miracle à un si prompt
+                        changement ; et je ne saurois douter que vos souhaits et vos prières n'y
+                        aient contribué. Jugez de ma reconnoissance par leur effet. Ma fille est de
+                        moitié de tout ce que je vous dis ici : elle vous fait mille remerciements,
+                        et vous conjure d'en faire beaucoup à M. Barbeyrac. Nous sommes trop
+                        heureuses de n'avoir plus qu'à prendre patience, et de la rhubarbe, dont
+                        elle se trouve tout-à-fait bien. Nous ne doutons pas que dans cet état de
+                        repos, M. Barbeyrac n'approuve ce remède, avec un régime qui est quelquefois
+                        le meilleur de tous. Remerciez Dieu, Monsieur, et pour vous, et pour nous,
+                        car nous ne saurions douter que vous ne soyez intéressé dans cette
+                        reconnoissance ; et puis, Monsieur, jetez les yeux sur tous les habitants de
+                        ce château, et jugez de leurs sentiments pour vous.</p>
+                </div2>
+            </div1>
+        </body>
+    </text>
+
+    <text n="3" ref="3">
+        <body>
+            <div1>
+                <head>
+                    <p>De Monsieur de Coulanges à Madame de Sévigné</p>
+                    <p>A Saint-Martin, le 17
+                        février 1696,</p>
+                </head>
+                <div2>
+                    
+                        <p> Mais pourquoi ne pas écrire quelquefois in-folio, quand on trouve un
+                            beau et bon papier qui vous y invite ? J'ai reçu ici, ma très-aimable
+                            gouvernante, la grande et la petite lettre que vous avez bien voulu
+                            m'écrire en même jour pour répondre à toutes les miennes ; et je suis
+                            toujours charmé de votre style et de votre bon et loyal commerce. Il y a
+                            tantôt quinze jours que je suis ici auprès de cet adorable cardinal, et
+                            il y a tantôt quinze jours que je suis l'homme du monde le plus heureux
+                            ; bonne compagnie, partout de grands feux, bonne symphonie, mille et
+                            mille jeux, table bien servie, vins délicieux ; enfin, Madame, voici le
+                            pays de cocagne au pied de la lettre. Les officiers même de cette maison
+                            ont une rage de toujours apprendre, quoiqu'ils soient maîtres passés ;
+                            en sorte qu'ils nous feront crever à la fin : ils possédoient au suprême
+                            degré tous les ragoûts les plus exquis de France et d'Italie ; les voilà
+                            devenus apprentifs sous le meilleur officier de cuisine d'Angleterre,
+                            pour être bientôt en ragoûts anglois beaucoup plus savants que lui ;
+                            nous ne savons donc plus où nous en sommes ; tous nos ragoûts parlent
+                            des langues différentes, mais ils se font si bien entendre, que nous les
+                            mangeons, sous quelque figure et dans quelque sauce qu'ils se
+                            présentent. Vous voyez bien, Madame, que ce seul article de la bonne
+                            chère demandoit un in-folio. Voici, en vérité, une maison admirable, et
+                            un maître de maison qu'on ne peut assez adorer : je n'ai pas manqué de
+                            lui faire tous vos compliments, et je ne vous écris d'ici, que parce que
+                            je crois le moment arrivé qu'il pourra lui-même y répondre, comme bien
+                            des fois il m'a témoigné en avoir envie.</p><p>Nous avons eu toute la semaine
+                            passée beaucoup de frères, de neveux et de nièces ; mais depuis lundi,
+                            M. le cardinal en est réduit à ses deux fidèles commensaux, l'aimable
+                            Richard Hamilton, pour l'un, et le jeune Coulanges pour l'autre, et vous
+                            ne sauriez croire combien il s'accommode de cette solitude, il s'en
+                            accommode même si bien, que nous n'entendons pas plus parler de ce qui
+                            se passe à Paris et à la cour, que si nous étions à La Trappe ; en sorte
+                            que voici un tome tout séparé des autres que je vous ai envoyés sans
+                            savoir seulement si tous les mariages résolus ont été célébrés, et si
+                            tous les mariages proposés ont été, ou sont en voie d'aller à bonne fin.
+                            Vous avez su l'extrémité de madame la duchesse de Créqui, et vous avez
+                            su ensuite sa résurrection, qui a donné une excessive joie à M. le
+                            cardinal, sa longue vie étant fort nécessaire pour le bonheur de M. le
+                            duc et de madame la duchesse d'Albret ; et c'est depuis cette
+                            résurrection que M. le cardinal a renoncé à toutes les nouvelles du
+                            monde pour vaquer à lui-même, et à une infinité d'ouvriers qui
+                            travaillent sans fin et sans cesse pour la perfection, sans contredit,
+                            d'un des plus beaux jardins de l'Europe. Je suis ravi de la meilleure
+                            santé de notre comtesse ; savez-vous bien que c'est un très-bon signe de
+                            vie, que d'avoir voulu elle-même lire mes lettres, et y donner les tons
+                            qu'elles demandent ? Vous m'assurez qu'elle a bien ri en de certains
+                            endroits, et que la présidente cuite au four ne lui a point déplu. Mais
+                            ce que j'admire de vous autres, Mesdames, si versées dans l'histoire, et
+                            si instruites des bonnes maisons de France, c'est que vous ne sachiez
+                            pas que la maison de Douilli est séparée en deux branches ; que l'une a
+                            produit la jeune marquise de Saint-Hérem et l'autre, la femme que M. de
+                            P... vient d'épouser : en sorte que ce sont deux cousines germaines, qui
+                            se sont mariées presque en même temps. L'une, toute resplendissante
+                            d'une Frémont pour mère, qui lui donne une maréchale de Lorges pour
+                            cousine germaine, et des duchesses de Saint-Simon et de Lauzun pour
+                            nièces à la mode de Bretagne ; l'une, dis-je, est entrée dans la maison
+                            de Montmorin ; et l'autre avec moins d'ambition, quoique fille d'une
+                            mère remariée à M. de l'Hôpital s'est contentée d'entrer dans la maison
+                            de Ber… ; et voilà par ce moyen l'énigme développée, pour l'explication
+                            de laquelle vous avez recouru à moi. Nous avons encore deux mois à être
+                            ici, ils passeront bien vite ; dès que je serai à Paris, je me remettrai
+                            dans le commerce ; et aussitôt je vous donnerai la continuation des
+                            tomes précédents. Je voudrois bien que vous y puissiez trouver le
+                            mariage de mademoiselle de Bagnols avec M. de Poissy ; mais c'est un
+                            enfant si difficile à baptiser, que je n'ose en espérer la conclusion,
+                            quoiqu'on m'ait mandé que l'affaire étoit en bon chemin. Adieu,
+                            Mesdames, je m'en vais porter ma feuille à notre illustre cardinal pour
+                            illuminer au moins le reste de cette page, et vous rendre par-là ma
+                            lettre d'un poids beaucoup au-dessus de ce qu'elle vaut. Mille
+                            compliments, je vous supplie, et mille respects à tous les habitants du
+                            royal château où vous êtes. Madame de Simiane est la maîtresse de ne
+                            point faire de réponse à mes lettres ; mais j'aurois souhaité au moins
+                            pouvoir dire quelque chose de sa part à la duchesse de Villeroi, qui lui
+                            avoit si joliment écrit dans ma lettre, et qui m'en demande des
+                            nouvelles tous les jours. </p>
+                    
+
+                    
+                        <div3>Message de M. le Cardinal de Bouillon</div3>
+                        <p>Il est moins humiliant pour moi, Madame, de vous avouer ingénument la
+                            faute que j'ai faite de ne vous avoir donné aucun signe de vie à
+                            l'occasion de tous vos mariages : non plus qu'à toute la maison de
+                            Grignan que j'honore et que j'aime infiniment ; cela est, dis-je, moins
+                            humiliant que d'entreprendre d'ajouter quelques mots à la lettre de M.
+                            de Coulanges, qui est digne de vous et de lui. Il faut pourtant que je
+                            vous assure qu'en lieu du monde vous n'avez un serviteur qui vous soit
+                            si absolument acquis que je le suis.</p>
+                    
+
+                    
+                        <div3>Monsieur de Coulanges continue</div3>
+                        <p>Notre cousine de Pracontal part incessamment pour Montélimart ; elle vous
+                            ira voir, et n'aura pas envie de renoncer ses parents : jamais sa mère
+                            ne lui avoit dit que nous en fussions, et sans moi elle l'ignoreroit
+                            encore. C'est une très-aimable femme, qui va passer bien des mois en
+                            province ; j'en suis fâché, car je commençois fort à m'en accommoder ;
+                            son mari a aussi du mérite, mais il ne la perd pas de vue : si c'est
+                            tendresse, je n'ai rien à dire, quoique cette tendresse soit fort
+                            incommode quelquefois ; si c'est jalousie, c'est un effet de la dévotion
+                            de madame de Montchevreuil, à qui il n'a pas tenu qu'elle n'ait perdu sa
+                            fille auprès de son mari, et de tout le genre humain. Je suis assuré que
+                            vous la trouverez fort raisonnable, notre cousine ; que vous vous en
+                            accommoderez fort, et que vous ne serez point fâchée de lui étaler
+                            toutes les grandeurs de Grignan. Elle m'a prié de vous la recommander,
+                            et je vous prie de lui dire, quand vous la verrez, que je vous l'ai
+                            recommandée avec tendresse et avec éloge. Son mari l'établira dans une
+                            terre auprès de Lyon pendant toute la campagne, avec sa belle-sœur
+                            madame Busseaux.</p>
+                    
+                </div2>
+            </div1>
+        </body>
+    </text>
+
+    <text n="4" ref="4">
+        <body>
+            <div1>
+                <head> 
+                    <p>De Monsieur de Coulanges à Mesdames de Sévigné et de Grignan</p>
+                    <p>A Paris,
+                        le 20 février 1696,</p>
+                </head>
+                <div2>
+                    <p>Voici un esquif que j'envoie après le vaisseau qui est parti de Saint-Martin,
+                        pour vous dire premièrement, que me voici arrivé, et que je reçus samedi au
+                        soir, à l'heure que j'y pensois le moins, lettres sur lettres, que madame de
+                        Louvois étoit depuis mardi tombée dans des coliques si cruelles et si
+                        violentes, que la dernière, arrivée vendredi sur le soir, avoit fait peur,
+                        et fait accourir tous ses parents et tous ses amis ; en sorte que, sans
+                        hésiter, je partis hier à quatre heures du matin de Saint-Martin pour me
+                        rendre auprès d'elle et à mon devoir ; je l'ai trouvée fort abattue, mais
+                        hors de ses violentes douleurs par les remèdes et par une saignée qu'on lui
+                        a faits ; obligée cependant de se tenir dans son lit sans remuer, et même
+                        sans beaucoup parler, de peur de fortifier les douleurs qu'elle a toujours,
+                        mais plus aisées à supporter que celles qui viennent par accès. Voilà,
+                        Mesdames, comme en ce monde chacun a ses peines et ses maux. J'ai été fort
+                        bien reçu, et mon zèle a été fort approuvé ; mais quoique cette maladie ne
+                        paroisse point dangereuse, et que madame de Louvois fût beaucoup mieux hier
+                        sur le minuit, je n'en serai pas moins arrêté ici pendant quelques jours. Je
+                        fus hier très-fâché d'être obligé de quitter Saint-Martin, d'autant plus que
+                        samedi après dîner, le duc et la duchesse d'Albret, joliment et en bon
+                        ménage, y étoient venus surprendre le cardinal contre ses ordres, car il ne
+                        vouloit point que la duchesse vît Saint-Martin avant le printemps ; c'est un
+                        goût de maître de maison que vous comprenez fort bien ; mais il ne fut pas
+                        fâché pourtant de cette surprise, qui l'avoit fait résoudre de rester encore
+                        deux jours à Saint-Martin, pour leur expliquer au moins tout ce qui pareroit
+                        sa maison et ses jardins dans la belle saison, et j'étois fort nécessaire
+                        pour le seconder. Le jeune ménage avoit été ravi de me trouver, et la
+                        journée d'hier étoit destinée pour lier, entre les pots et les pintes, une
+                        grande connoissance avec la duchesse, qui est si bien faite, si honnête, si
+                        polie, si bien élevée, qu'elle est pour moi une beauté achevée, quoiqu'elle
+                        ne soit rien moins que belle, et qu'elle n'ait que la plus noble et la plus
+                        riche taille qu'on puisse jamais voir. Voilà donc, Mesdames, la première
+                        partie de mon discours, qui n'auroit pourtant pas fait partir l'esquif, si
+                        la seconde ne me pressoit, pour faire, sans perdre de temps, réparation
+                        d'honneur à madame de Simiane.</p>
+                        <p>Je passai hier la journée avec la duchesse de
+                        Villeroi, qui me demandant si je n'avois point de ses nouvelles, me dit
+                        qu'elle en avoit reçu une très-aimable réponse ; aussitôt je remerciai la
+                        duchesse de m'avoir appris une si bonne nouvelle, et lui expliquai pourquoi,
+                        car je n'aimois point que madame de Simiane ne fût plus l'exacte et la
+                        régulière Pauline. Je suis ravi, comme vous pouvez croire, qu'elle continue
+                        dans toutes ses perfections, et je lui demande pardon de l'avoir soupçonnée
+                        de cette peccadille. La duchesse de Villeroi devient fort jolie et fort
+                        aimable ; voilà pourquoi j'étois fâché que cette allumette n'eût point pris.
+                        J'ai retrouvé ici la rage des mariages ; c'est demain celui de M. de Marsan
+                        avez madame de Seignelay : ils se donnent réciproquement tous leurs meubles
+                        et la jouissance de vingt mille livres de rente au dernier vivant, en cas
+                        qu'il n'y ait point d'enfants ; le public se déchaîne assez contre madame de
+                        Seignelay ; bien des gens trouvent que d'être à soi, et de jouir de soixante
+                        et dix mille livres de rente, étoit un état fort heureux ; et d'autres lui
+                        pardonnent d'avoir voulu s'en retirer par un rang aussi distingué que celui
+                        qu'elle va avoir, et par prendre un mari, qu'on est assez persuadé qui vivra
+                        fort bien avec elle. Après avoir voulu épouser M. de Luxembourg, on ne lui
+                        auroit plus su de gré de passer en viduité le reste de ses jours ; et son
+                        dessein a été de se dépiquer, et toute sa famille en même temps. Ce sera
+                        demain à minuit cette grande cérémonie. C'est demain aussi le mariage du
+                        fils de Villacerf, avec mademoiselle de Brinon-Senneterre ; on ne comprend
+                        pas bien le goût de M. et de madame de Brinon, qui donnent cinquante mille
+                        écus ; mais voilà comme tout se prend en ce monde. On assure le mariage de
+                        mademoiselle de Royan avec le comte de Luxe, maintenant duc de Châtillon. On
+                        parle de celui de mademoiselle de Bosmelet avec le jeune duc de La Force,
+                        qui seroit bien son fils. J'ai trouvé en arrivant ici le mariage de
+                        mademoiselle de Bagnols avec M. de Poissy sur le côté, je ne sais par quelle
+                        faute ; il y a du pour et du contre dans tout cela.</p>
+                    <p>Adieu, Mesdames, je vous adore et vous embrasse.</p>
+                </div2>
+            </div1>
+        </body>
+    </text>
+
+    <text n="5" ref="5">
+        <body>
+            <div1>
+                <head>
+                    <p>De Monsieur de Coulanges à Madame de Simiane</p>
+                    <p>A Paris, le 27 février
+                        1696,</p>
+                </head>
+                <div2>
+                    <p>Vous ne manquez à rien, divine Pauline, et j'ai bien des pardons à vous
+                        demander d'avoir soupçonné, comme j'ai fait, votre régularité ; je me
+                        garderai bien désormais de tomber dans la faute énorme que j'ai commise
+                        envers vous ; je ne veux point passer auprès de vous pour un petit homme
+                        épineux, et vous pouvez fort bien écrire à vos bons points et aisements,
+                        comme on dit ; et quelquefois même ne me faire aucune réponse, sans que
+                        jamais j'en sois offensé. Il faut bien quelque petit commerce entre nous,
+                        pour entretenir connoissance ; mais il faut qu'il soit libre, et le mettre
+                        en œuvre, quand la fantaisie vous en prend : n'est-ce pas bien parler ? Il y
+                        a huit jours que je suis à Paris, à donner presque tout mon temps à madame
+                        de Louvois, qui est sans colique véritablement, mais qui a été si mal menée,
+                        et qui a tant de vapeurs, qu'elle a toutes les peines du monde à se
+                        remettre. L'ambassadeur de Portugal fit hier son entrée solennelle à Paris
+                        par la porte Saint-Antoine, et fit le tour de la Place Royale : le pauvre
+                        peuple de Paris est si affamé de spectacles, que c'en fut un pour lui que
+                        cette entrée, qui n'auroit pas été regardée en un autre temps. L'ambassadeur
+                        a une livrée grise avec des galons d'argent et des veloutés bleus, et quatre
+                        beaux carrosses ; mais une honte pour la France, ce sont les carrosses et
+                        les chevaux qu'on avoit envoyés pour lui faire cortège. Cependant on ne
+                        pouvoit pas se remuer dans les rues, tant il y avoit de monde. La Place
+                        Royale, avec des tapis sur les fenêtres, et à tous les balcons, n'étoit pas
+                        un des moins beaux endroits de la ville à faire voir à cet ambassadeur :
+                        aussi en fit-il le tour, et il y vit belle et honorable compagnie sur le
+                        balcon de l'hôtel de Chaulnes, où avoient dîné M. le cardinal de Bouillon,
+                        mesdames les duchesses de La Trémouille et d'Albret, madame de Coulanges,
+                        l'abbé Testu, l'abbé d'Auvergne, le comte d'Albret et moi ; et où beaucoup
+                        d'autres gens considérables se rendirent, après le dîner, pour le spectacle
+                        ; le chevalier de Bouillon entre autres, qu'on présenta et qu'on fit baiser
+                        à votre amie madame de Coulanges, comme un homme fort extraordinaire.</p>
+                    <p>Je m'en vais de ce pas dîner à, où M. et madame de Nevers, plus belle et plus
+                        aimable que jamais, m'ont donné rendez-vous. Je crois que je n'aurai pas
+                        beaucoup de faim quand j'en reviendrai. Il ne faut pas cependant que je
+                        manque ce soir à M. de Lamoignon, en dussé - je crever. N'allez point conter
+                        ma vie à M. le chevalier de Grignan ; car ma vie offense tellement tous les
+                        goutteux, qu'il n'y a malheur qu'ils ne me souhaitent. Dernièrement M. de
+                        Saint-Géran fut si offensé de me voir insolemment taper du pied dans le
+                        temps qu'il ne pouvoit se remuer, qu'il m'auroit étranglé, s'il l'avoit pu.
+                        Rien n'est assurément plus extraordinaire que l'état jeune et florissant
+                        dans lequel je me trouve : vous perdez bien de n'être point ici pour me voir
+                        ; combien danserions-nous ensemble aux chansons ! c'est un divertissement à
+                        la mode. Monsieur et madame de Marsan sont allés à Versailles, rien n'est
+                        pareil à leur contentement. Mais n'êtes-vous pas trop heureuse, divine
+                        Pauline, de n'avoir point épousé M. de Lauzun, qui, sans rime et sans
+                        raison, a planté là sa femme ? On conte des histoires de lui qui ne
+                        finissent point, mais que je n'ai pas le temps de vous écrire. C'est pour le
+                        lundi gras le mariage du nouveau duc de Châtillon avec mademoiselle de
+                        Royan. La bonne femme madame de Bouteville lui a envoyé pour quatre-vingt
+                        mille francs de pierreries. Il n'y a pas de mariage encore plus heureux que
+                        celui de M. de Luxembourg, qui a perdu sa petite-fille du premier lit, au
+                        grand contentement de tous ceux qui en ont hérité. Monsieur et madame de
+                        Pracontal partent dimanche pour aller incessamment vous voir. Je vous
+                        recommande madame de Pracontal, qui est notre cousine, et que j'aime comme
+                        ma vie : je suis très-affligée qu'elle nous quitte ; vous la trouverez
+                        très-aimable et de bonne compagnie ; elle passera bien du temps hors de
+                        Paris, ou je me trompe fort. M. de Marillac a perdu un frère abbé.
+                        MONSEIGNEUR est à Meudon. Le roi s'en va mercredi à Marly ; et le Jubilé,
+                        contre vent et marée, commencera dimanche prochain, dont le peuple est
+                        affligé ; il est dans l'habitude d'employer les trois jours gras à un autre
+                        usage qu'à prier Dieu. Le père de La Ferté, jésuite, qui prêche avec un
+                        succès au-dessus de son âge et de sa qualité, par un zèle louable et qui
+                        prouve sa vocation, a obtenu de ses supérieurs la permission de s'en aller
+                        en Canada.</p>
+                    <p>Adieu, belle et divine Pauline, je n'en sais pas davantage. Je suis ravi de
+                        la meilleure santé de madame votre mère ; mais nous n'osons nous flatter de
+                        la voir ici plus tôt qu'à la fin de l'automne, et c'est nous mettre le
+                        carême bien haut.</p>
+                </div2>
+            </div1>
+        </body>
+    </text>
+
+    <text n="6" ref="6">
+        <body>
+            <div1>
+                <head> 
+                    <p>De Madame de Sévigné à Monsieur de Coulanges</p>
+                    <p>A Grignan, le 29 mars
+                        1696,</p>
+                </head>
+                <div2>
+                    <p> Toutes choses cessantes, je pleure et je jette les hauts cris de la mort de
+                        Blanchefort, cet aimable garçon, tout parfait, qu'on donnoit pour exemple à
+                        tous nos jeunes gens. Une réputation toute faite ; une valeur reconnue et
+                        digne de son nom, une humeur admirable pour lui (car la mauvaise-humeur
+                        tourmente), bonne pour ses amis, bonne pour sa famille ; sensible à la
+                        tendresse de madame sa mère, de madame sa grand'mère, les aimant, les
+                        honorant, connoissant leur mérite, prenant plaisir à leur faire sentir sa
+                        reconnoissance, et à les payer: par là de l'excès de leur amitié; un bon
+                        sens avec une jolie figure; point enivré de sa jeunesse, comme le sont tous
+                        les jeunes gens qui semblent avoir le diable au corps : et cet aimable
+                        garçon disparoît en un moment, comme une fleur que le vent emporte, sans
+                        guerre, sans occasion, sans mauvais air! Mon cher cousin, où peut-on trouver
+                        des paroles pour dire ce que l'on pense de la douleur de ces deux mères, et
+                        pour leur faire entendre ce que nous pensons ici ? Nous ne songeons pas à
+                        leur écrire ; mais si dans quelque occasion vous trouvez le moment de nommer
+                        ma fille et moi et MM. de Grignan, voilà nos sentiments sur cette perte
+                        irréparable. Madame de Vins a tout perdu, je l'avoue ; mais quand le cœur a
+                        choisi entre deux fils, on n'en voit plus qu'un. Je ne saurois parler
+                        d'autre chose. Je fais la révérence à la sainte et modeste sépulture de
+                        madame de Guise, dont le renoncement à celle des rois, ses aïeux, mérite une
+                        couronne éternelle. Je trouve M. de Saint-Géran trop heureux ; et vous
+                        aussi, d'avoir à consoler madame sa femme : dites-lui pour nous tout ce que
+                        vous trouverez à propos. Et pour madame de Miramion, cette mère de l'église,
+                        ce sera une perte publique. Adieu, mon cher cousin, je ne saurois changer de
+                        ton. Vous avez fait votre jubilé. Le charmant voyage de Saint-Martin a suivi
+                        de près le sac et la cendre dont vous me parliez. Les délices dont M. et
+                        Madame de Marsan jouissent présentement méritent bien que vous les voyiez
+                        quelquefois ; et que vous les mettiez dans votre hotte; et moi, je mérite
+                        d'être dans celle où vous mettez ceux qui vous aiment ; mais je crains que
+                        vous n'ayez point de hotte pour ces derniers.</p>
+                </div2>
+            </div1>
+        </body>
+    </text>
+</TEI>
