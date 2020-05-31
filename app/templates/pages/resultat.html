@@ -1,0 +1,107 @@
+<style type="text/css">
+
+    .titre {    
+        font-family: 'Petit Formal Script', cursive;
+        font-weight: bold;
+        font-size: 60px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        text-align: center;
+
+    }
+
+    .pagination {
+    	padding-bottom: 20px;
+    }
+
+    .col-8 {
+    	padding-top: 20px;
+    }
+
+</style>
+
+{% extends "conteneur.html" %}
+
+{% block titre %}| {{titre}}{%endblock%}
+
+{% block corps %}
+
+		<h2 class="titre">Résultats</h1>
+		<div class="row justify-content-center">		
+		<div class="col-8 border">
+		{% if resultats_personne %}
+			<p>{{resultats_personne.total}} personne(s) répond(ent) à votre recherche :</p>
+				<ul>
+						{% for personne in resultats_personne.items %}
+							<li><a href="{{url_for('personne', pers_id=personne.pers_id)}}">{{personne.pers_prenom}} {{personne.pers_nom}}</a></li>
+						{% endfor %}
+				</ul>
+
+				<nav aria-label="research-pagination">
+					<ul class="pagination justify-content-center">
+						{% for page in resultats_personne.iter_pages() %}
+							{% if page %}
+
+								{% if page != resultats_personne.page %}
+									<li class="page-item">
+										<a class="page-link" href="{{ url_for('resultat', keyword=motclef, 
+										resultats_personne=resultats_personne, page=page) }}">{{page}}</a>
+									</li>
+								{% else %}
+								<li class="page-item active disabled">
+									<a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+								</li>
+								{% endif %}
+
+							{% else %}
+								<li class="page-item disabled">
+									<a class="page-link">...</a>
+								</li>
+							{% endif %}
+
+						{% endfor %}
+					</ul>
+				</nav>
+		{% endif %}
+
+		{% if resultats_lieu %}
+			<p>{{resultats_lieu.total}} lieu(x) répond(ent) à votre recherche :</p>
+				<ul>
+						{% for lieu in resultats_lieu.items %}
+							<li><a href="{{url_for('lieu', lieu_id=lieu.lieu_id)}}">{{lieu.lieu_nom}}</a></li>
+						{% endfor %}
+				</ul>
+
+				<nav aria-label="research-pagination">
+					<ul class="pagination justify-content-center">
+						{%- for page in resultats_lieu.iter_pages() %}
+							{% if page %}
+
+								{% if page != resultats_lieu.page %}
+									<li class="page-item">
+										<a class="page-link" href="{{ url_for('resultat', keyword=motclef, page=page, resultats_lieu=resultats_lieu) }}">{{page}}</a>
+									</li>
+								{% else %}
+								<li class="page-item active disabled">
+									<a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+								</li>
+								{% endif %}
+
+							{% else %}
+								<li class="page-item disabled">
+									<a class="page-link">...</a>
+								</li>
+							{% endif %}
+
+						{% endfor %}
+					</ul>
+				</nav>
+		{% endif %}
+	</div>
+</div>
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "conteneur.html" %}
+
+{% block titre %}| Inscription{%endblock%}
+
+{% block corps %}
+
+<div class="signup-form">
+	<form class="form" method="POST" action="{{url_for('inscription')}}">
+		<h2 class="form-title">Inscription</h2>
+		<p class="lead-form">Complétez le formulaire et cliquez sur "S'inscrire".</p>
+  		<div class="form-group">
+  			<div class="input-group">
+  				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="nom" placeholder="Nom" required="required">
+  			</div>
+		</div>
+
+		<div class="form-group">
+  			<div class="input-group">
+  				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="login" placeholder="Identifiant" required="required">
+  			</div>
+		</div>
+
+		<div class="form-group">
+  			<div class="input-group">
+  				<span class="input-group-addon"><i class="fas fa-paper-plane"></i></span>
+				<input type="text" class="form-control" name="email" placeholder="email@example.com" required="required">
+  			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				<input type="password" class="form-control" name="motdepasse" placeholder="Mot de passe" required="required">
+			</div>
+    	</div>
+  		<div class="form-group">
+    		<button type="submit" class="btn btn-dark btn-block">S'inscrire</button>
+  		</div>
+	</form>
+</div>
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}
+
+{% endblock %}

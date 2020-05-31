@@ -1,0 +1,33 @@
+{% extends "conteneur.html" %}
+
+{% block corps %}
+
+<body id="body-accueil">
+    <div class="container">
+    <h2 class="titre-accueil">Bienvenue !</h2>
+    
+    <div class="card-accueil border-0">
+        <div class="card-body-accueil p-1">
+            <br/>
+            
+            <p class="lead-accueil">Ce site propose une édition électronique des lettres de la marquise de Sévigné et de ses proches. Un des objectifs est de montrer le réseau de sociabilité qui l'entoure.</p>
+            <p class="lead-accueil">L'interface permet de consulter les lettres via un index, une galerie des portraits et une carte. Vous pouvez effectuer des recherches sur des individus et des lieux cités dans les lettres.</p>
+            <p class="lead-accueil">Pour accéder au contenu du site, vous devez vous <a href="{{ url_for('connexion') }}" id="lien-accueil">connecter</a> ou vous <a href="{{ url_for('inscription') }}" id="lien-accueil">inscrire.</a></p>
+            {% if lettres %}
+            <p class="lead-accueil"><a href="{{ url_for('index') }}" id="lien-accueil">{{lettres|length}}</a> lettres sont aujourd'hui consultables.</p>
+            {% else %}
+            <p class="lead-accueil">La base de données est en cours de constitution.</p> 
+            {% endif %}
+        </div>
+    
+</div>
+</div>
+
+<footer class="page-footer-accueil">
+    <div class="footer-copyright text-center py-3">     
+        <p class="p-copyright">© Morgane Rousselot - École Nationale des Chartes</p>        
+    </div>
+</footer>
+
+</body>
+{% endblock %}

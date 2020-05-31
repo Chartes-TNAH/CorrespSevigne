@@ -1,0 +1,44 @@
+{% extends "conteneur.html" %}
+
+{% block titre %}| Connexion{%endblock%}
+
+{% block corps %}
+
+<div class="modal-dialog modal-login">
+  <div class="modal-content">
+    <div class="modal-header">        
+      <h4 class="modal-title">Connexion</h4>
+    </div>
+    <div class="modal-body">
+      <form class="form" action="{{url_for('connexion')}}" method="POST">
+
+        <div class="form-group-modal">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control" name="login" placeholder="Identifiant" required="required">
+          </div>
+        </div>
+
+        <div class="form-group-modal">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input type="password" class="form-control" name="motdepasse" placeholder="Mot de passe" required="required">
+          </div>
+        </div>
+
+        <div class="form-group-modal">
+          <button type="submit" class="btn btn-dark btn-block">Se connecter</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <p>Vous n'avez pas de compte ? <a href="{{url_for('inscription')}}" class="a-modal"> Inscrivez-vous !</a></p>
+    </div>
+  </div>
+</div>
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}
+
+{% endblock %}

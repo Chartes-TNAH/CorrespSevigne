@@ -1,0 +1,79 @@
+{% extends "conteneur.html" %}
+
+{% block titre %}
+	{%if personne %}| Personne : {{personne.pers_nom}} {% endif %}
+{%endblock%}
+
+{% block corps %}
+
+	{% if personne %}
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-3">
+            	{% if personne.pers_image %}
+                <img src="../static/img/portraits/{{personne.pers_id}}.jpg" class="align-center rounded-circle" alt="portrait" width="100%">
+                {% else %}
+                <p/>
+                {% endif %}
+            </div>
+                
+                
+            <div class="col-lg-9"> 
+                <h1>{{personne.pers_prenom}} {{personne.pers_nom}}</h1>
+                <dl>
+                	{% if personne.pers_autre_nom %}
+                    <dt>Surnom</dt><dd>{{personne.pers_autre_nom}}</dd>
+                    {% endif %}
+
+                    {% if personne.pers_naissance %}
+                    <dt>Naissance</dt><dd>{{personne.pers_naissance}}</dd>
+                    {% else %}
+                    <dt>Naissance</dt><dd>Inconnu</dd>
+                    {% endif %}
+
+                    {% if personne.pers_mort %}
+                    <dt>Mort</dt><dd>{{personne.pers_mort}}</dd>
+                    {% else %}
+                    <dt>Mort</dt><dd>Inconnu</dd>
+                    {% endif %}
+
+                    {% if personne.pers_titre %}
+                    <dt>Titre</dt><dd>{{personne.pers_titre}}</dd>
+                    {% endif %}
+
+                    {% if personne.pers_fonction %}
+                    <dt>Fonction</dt><dd>{{personne.pers_fonction}}</dd>
+                    {% endif %}
+
+                    {% if personne.pers_url %}
+                    <dt>Notice</dt><dd><a href="{{personne.pers_url}}" external=True>{{personne.pers_url}}</a></dd>
+                    {% endif %}
+
+                    {% if personne.pers_description %}
+                    <dt>Description</dt><dd>{{personne.pers_description}}</dd>
+                    {% else %}
+                    <dt>Description</dt><dd>(En cours de rédaction)</dd>
+                    {% endif %}
+                    
+                    <dt>Lettre(s)</dt>
+                    <dd>{% for citeP in personne.query.get(personne.pers_id).citeP %}
+                    <a href="{{url_for('cite', numero=citeP.personne.pers_id, ref=citeP.citeP_lettre_id)}}">{{citeP.citeP_lettre_id}}</a>
+                    {% endfor %}</dd>       
+                </dl>
+            </div> 
+        </div>
+    </div>
+    {% else %}
+    <p>La base de données est en cours de constitution</p>
+    {% endif %}
+
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}
+
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "conteneur.html" %}
+
+{%block corps%}
+
+<div>
+	<h2 class="titre-lettre">Lettre</h3>
+	<div>
+	{{HTML|safe}}
+	</div>
+</div>
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}
+
+{% endblock %}

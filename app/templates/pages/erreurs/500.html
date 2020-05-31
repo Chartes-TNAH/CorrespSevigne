@@ -1,0 +1,15 @@
+{% extends "conteneur.html" %}
+
+{% block corps %}
+
+<div class="container">
+	<h1>Oups, une erreur inattendue est survenue...</h1>
+	</br>
+	<div class="text-center">
+		<span>Vous pouvez retourner à l'<a href="{{url_for('accueil')}}">accueil</a>.</span>
+		</br>
+		</br>
+		<figure><img src="../static/img/chat.jpg" class="img-fluid"></figure>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "conteneur.html" %}
+
+{%block corps%}
+
+<div class="container">
+	<h2 class="titre-index">Index des lettres</h2>
+	<p id="compteur">La base recense {{lettres|length}} lettres :</p>
+	<div class="row" id="row-index">
+	{% if lettres %}	
+		<div class="list-group">
+			{% for lettre in lettres %}
+  			<a href="{{url_for('lettre', numero=lettre.lettre_id)}}" class="list-group-item">
+    		<h2 class="list-group-item-heading"><b>Lettre n°{{lettre.lettre_id}}</b></h2>
+    		<p class="list-group-item-text">De {{lettre.lettre_expediteur}} à {{lettre.lettre_destinataire}}, le {{lettre.lettre_date}} à {{lettre.lettre_lieu}}.</p>
+  			</a>
+  			{% endfor %}
+		</div>
+		{% else %}
+		<p>La base de données est en cours de constitution.</p>
+	{% endif %}
+  </div>
+</div>
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}
+
+{% endblock %}

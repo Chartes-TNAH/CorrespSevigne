@@ -1,0 +1,41 @@
+{% extends "conteneur.html" %}
+
+{% block corps %}
+
+<div class="container">
+
+    <h2 class="titre-galerie">Galerie des portraits</h2>
+   
+    <div class="row" id="gallery" style="margin: 15px;">
+   
+        {% for personne in personnes %}            
+        {% if personne.pers_image %}
+        <figure class="col-md-4">
+            <a href="{{url_for('personne', pers_id=personne.pers_id)}}" data-size="1600x1067">
+                <img alt="{{personne.pers_prenom}} {{personne.pers_nom}}" src="../static/img/portraits/{{personne.pers_id}}.jpg" class="img-fluid" style="width:100%;" title="{{personne.pers_prenom}} {{personne.pers_nom}}">
+                <figcaption class="figure-caption text-center">{{personne.pers_prenom}} {{personne.pers_nom}}</figcaption>
+            </a>
+        </figure>
+
+        {% else %}
+        <figure class="col-md-4">
+            <a href="{{url_for('personne', pers_id=personne.pers_id)}}" data-size="1600x1067">
+                <img alt="{{personne.pers_prenom}} {{personne.pers_nom}}" src="../static/img/portraits/no_image.jpg" class="img-fluid" style="width:100%;" title="{{personne.pers_prenom}} {{personne.pers_nom}}">
+                {% if personne.pers_prenom %}
+                <figcaption class="figure-caption text-center">{{personne.pers_prenom}} {{personne.pers_nom}}</figcaption>
+                {% else %}
+                <figcaption class="figure-caption text-center">{{personne.pers_nom}}</figcaption>
+                {% endif %}
+
+            </a>
+        </figure>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock %}
+
+{% endblock %}

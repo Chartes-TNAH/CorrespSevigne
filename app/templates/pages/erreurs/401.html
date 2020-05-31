@@ -1,0 +1,16 @@
+{% extends "conteneur.html" %}
+
+{% block corps %}
+
+<div class="container">
+	<h1 class="titre-erreur">Oups, vous n'êtes pas autorisé à accéder à cette page...</h1>
+	</br>
+	<div class="text-center">
+		<span>Vous pouvez vous <a href="{{url_for('connexion')}}">connecter</a> ou vous <a href="{{url_for('inscription')}}">inscrire</a> pour y accéder, ou retourner à l'<a href="{{url_for('accueil')}}">accueil</a>.</span>
+		</br>
+		</br>
+		<figure><img src="/static/img/yeux.png" class="img-fluid"></figure>
+	</div>
+</div>
+{% endblock %}
+
