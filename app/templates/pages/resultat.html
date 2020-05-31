@@ -1,34 +1,12 @@
-<style type="text/css">
-
-    .titre {    
-        font-family: 'Petit Formal Script', cursive;
-        font-weight: bold;
-        font-size: 60px;
-        padding-top: 50px;
-        padding-bottom: 10px;
-        text-align: center;
-
-    }
-
-    .pagination {
-    	padding-bottom: 20px;
-    }
-
-    .col-8 {
-    	padding-top: 20px;
-    }
-
-</style>
-
 {% extends "conteneur.html" %}
 
 {% block titre %}| {{titre}}{%endblock%}
 
 {% block corps %}
 
-		<h2 class="titre">Résultats</h1>
+		<h2 class="titre-resultat">Résultats</h1>
 		<div class="row justify-content-center">		
-		<div class="col-8 border">
+		<div class="col-8 border" id="col-resultat">
 		{% if resultats_personne %}
 			<p>{{resultats_personne.total}} personne(s) répond(ent) à votre recherche :</p>
 				<ul>

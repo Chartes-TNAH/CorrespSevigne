@@ -1,3 +1,5 @@
+/* Styles CSS utilisés dans les templates */
+
 /* Page d'accueil */
 
 #body-accueil {
@@ -246,6 +248,25 @@
 
 .a-modal:hover {
     color: #999;
+}
+
+/* Page résultat */
+
+.titre-resultat {    
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bold;
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.pagination {
+    padding-bottom: 20px;
+}
+
+#col-resultat {
+  	padding-top: 20px;
 }
 
 /* Pages notices (lieu, personne) */
