@@ -263,7 +263,7 @@ def connexion():
             login_user(utilisateur)
             return redirect("/")
         else:
-            flash("L'identifiant ou le mot de passe n'a pas été reconnu", "error")
+            flash("Identifiant ou mot de passe inconnu", "error")
     return render_template("pages/connexion.html")
 login.login_view = 'connexion'
 
