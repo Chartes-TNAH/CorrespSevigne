@@ -22,7 +22,7 @@ Elle s'appuie sur deux types de données :
 
 Au préalable, installer Python3.
 Puis : 
-- Cloner le dépôt GIT: 'git clone https://github.com/MorganeRousselot/CorrespSevigne.git'
+- Cloner le dépôt GIT: 'git clone https://github.com/MorganeRlt/CorrespSevigne.git'
 - Entrer dans le dépôt
 - Installer un environnement virtuel : 'virtualenv -p python3 env'
 - Activer l'environnement virtuel : 'source env/bin/activate' (à répéter à chaque lancement de l'app)
