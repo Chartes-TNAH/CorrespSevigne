@@ -7,15 +7,13 @@
     <xsl:template match="/" >
         <div class="container">
             <div class="col-md-6 offset-md-3">
-                <xsl:apply-templates select="//text"/> 
+                <xsl:apply-templates select="//text[@n=$numero]"/>
             </div>
         </div>
     </xsl:template>
     
     <xsl:template match="text">
-        <xsl:if test="./@n=$numero">
-            <xsl:apply-templates/>
-        </xsl:if>
+        <xsl:apply-templates/>
     </xsl:template>
     
     <xsl:template match="body">
