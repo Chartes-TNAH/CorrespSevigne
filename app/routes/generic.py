@@ -94,7 +94,7 @@ def lettre(numero):
     # Parsage du doc XSLT et stockage de ce parsage dans la variable xslt_doc
     xslt_doc = etree.parse("app/static/lettres/lettres.xslt")
     # On indique à lxml que xslt_doc est bien une feuille de transformation XSL et on stocke le résultat dans la variable xslt_transformer
-    xslt_transformer = etree.XSLT(xslt_doc) 
+    xslt_transformer = etree.XSLT(xslt_doc)
     # Stockage du résultat de la transformation XSLT
     output_doc = xslt_transformer(source_doc, numero=str(numero))
     return render_template("pages/lettre.html", HTML=output_doc, numero=numero)
@@ -115,7 +115,7 @@ def cite(numero, ref):
     # Parsage du doc XSLT et stockage de ce parsage dans la variable xslt_doc
     xslt_doc = etree.parse("app/static/lettres/cite.xslt")
     # On indique à lxml que xslt_doc est bien une feuille de transformation XSL et on stocke le résultat dans la variable xslt_transformer
-    xslt_transformer = etree.XSLT(xslt_doc) 
+    xslt_transformer = etree.XSLT(xslt_doc)
     # Stockage du résultat de la transformation XSLT
     output_doc = xslt_transformer(source_doc, numero=str(numero), ref=str(ref))
     return render_template("pages/cite.html", HTML=output_doc, numero=numero, ref=ref)
@@ -164,7 +164,7 @@ def resultat():
 
     # Stockage dans une variable motclef des mot-clefs rentrés par l'utilisateur
     motclef = request.args.get("keyword", None)
-    
+
     # Stockage dans une variable page d'un numéro de page
     page = request.args.get("page", 1)
     if isinstance(page, str) and page.isdigit():
@@ -192,9 +192,9 @@ def resultat():
         		Personne.pers_mort.like("%{}%".format(motclef)),
         		Personne.pers_titre.like("%{}%".format(motclef)),
         		Personne.pers_fonction.like("%{}%".format(motclef)),
-        		)
+        	)
         ).order_by(Personne.pers_nom.asc()).paginate(page=page, per_page=RESULTATS_PAR_PAGE)
-        
+
         resultats_lieu = Lieu.query.filter(
             or_(
                 Lieu.lieu_nom.like("%{}%".format(motclef)),
@@ -202,7 +202,7 @@ def resultat():
                 Lieu.lieu_dpt.like("%{}%".format(motclef)),
                 )
         ).order_by(Lieu.lieu_nom.asc()).paginate(page=page, per_page=RESULTATS_PAR_PAGE)
-        
+
         titre = "Résultat pour la recherche `" + motclef + "`"
 
     return render_template(
@@ -248,7 +248,7 @@ def connexion():
     if current_user.is_authenticated is True:
         flash("Vous êtes déjà connecté.e", "info")
         return redirect("/")
-    
+
     # Si l'utilisateur n'est pas connecté, on lui demande son login et son mot de passe (si l'un des deux manque, on lui indique une erreur)
     if request.method == "POST":
         utilisateur = User.identification(
